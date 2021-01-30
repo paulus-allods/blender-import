@@ -7,6 +7,11 @@ import itertools
 
 from struct import unpack
 
+from . import xdb
+from . import blob
+from . import vertex
+from . import skeleton
+
 from bpy_extras.io_utils import ImportHelper
 from bpy.props import StringProperty, BoolProperty, EnumProperty
 from bpy.types import Operator
@@ -24,7 +29,7 @@ class ImportGeometry(Operator, ImportHelper):
     def execute(self, context):
         path = pathlib.Path(self.filepath)
 
-        parser = XdbParser(path)
+        parser = xdb.XdbParser(path)
         bin_parser = blob.BinParser(path.with_suffix('.bin'))
 
         vertex_bin_converters = []
