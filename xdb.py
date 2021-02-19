@@ -57,7 +57,7 @@ class XdbParser:
                 lods = []
                 for lod in item.findall('lods/Item'):
                     lods.append(XdbParser._parse_geometry_fragment(lod))
-                material = XdbParser._parse_material(item.find('material'))
+                material = None #XdbParser._parse_material(item.find('material'))
                 material_name = item.find('materialName').text
                 name = item.find('name').text
                 skin_index = int(item.find('skinIndex').text)
@@ -68,15 +68,15 @@ class XdbParser:
         return self._model_elements
 
     def get_binary_file(self):
-        return self.content.find('binaryFile').attrib['href']
+        return XdbParser._find_href(self.content, 'binaryFile')
 
     @staticmethod
     def _parse_material(xml):
         blend_effect = geometry.BlendEffect[xml.find('BlendEffect').text]
-        diffuse_texture = xml.find('diffuseTexture').attrib['href']
+        diffuse_texture = XdbParser._find_href(xml, 'diffuseTexture')
         scroll_alpha = bool(du.strtobool(xml.find('scrollAlpha').text))
-        scroll_rgb = bool(du.strtobool(xml.find('ScrollRGB').text))
-        transparency_texture = xml.find('transparencyTexture').attrib['href']
+        scroll_rgb =  bool(du.strtobool((xml.find('ScrollRGB') or xml.find('scrollRGB')).text))
+        transparency_texture = XdbParser._find_href(xml, 'transparencyTexture')
         transparent = bool(du.strtobool(xml.find('transparent').text))
         use_fog = bool(du.strtobool(xml.find('useFog').text))
         u_translate_speed = float(xml.find('uTranslateSpeed').text)
@@ -97,3 +97,11 @@ class XdbParser:
         offset = int(xml.find('offset').text)
         type = vertex.VertexElementType[xml.find('type').text]
         return vertex.VertexComponent(type, offset)
+
+    @staticmethod
+    def _find_href(xml, key):
+        el = xml.find(key)
+        if el == None:
+            return None
+        else:
+            return el.attrib['href']
