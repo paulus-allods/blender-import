@@ -1,0 +1,1835 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Generated with AllodsOnlinePackTools (beta) © paulus-->
+<Geometry>
+    <visualSkeletonSize>0</visualSkeletonSize>
+    <vertexDeclarations>
+        <Item>
+            <weights>
+                <type>UNUSED</type>
+                <offset>255</offset>
+            </weights>
+            <texcoord1>
+                <type>UNUSED</type>
+                <offset>255</offset>
+            </texcoord1>
+            <texcoord0>
+                <type>FLOAT2</type>
+                <offset>12</offset>
+            </texcoord0>
+            <stride>24</stride>
+            <position>
+                <type>FLOAT3</type>
+                <offset>0</offset>
+            </position>
+            <normal>
+                <type>COLOR4</type>
+                <offset>20</offset>
+            </normal>
+            <indices>
+                <type>UNUSED</type>
+                <offset>255</offset>
+            </indices>
+            <color>
+                <type>UNUSED</type>
+                <offset>255</offset>
+            </color>
+        </Item>
+    </vertexDeclarations>
+    <vertexBuffer>
+        <size>748656</size>
+        <localID>0</localID>
+    </vertexBuffer>
+    <version>2</version>
+    <vb32>false</vb32>
+    <useProceduralEffect>true</useProceduralEffect>
+    <useDecals>false</useDecals>
+    <useColors>false</useColors>
+    <startFrame>0</startFrame>
+    <sourceFileCRC>-715440216</sourceFileCRC>
+    <sortMode>OFFSETS</sortMode>
+    <skeleton>
+        <size>1292</size>
+        <localID>2</localID>
+    </skeleton>
+    <sceneNodes>
+        <Item>
+            <scale>1</scale>
+            <rotation x="0" y="0" z="0" w="1" />
+            <position x="0" y="-110" z="34.74" />
+            <name>Slot_Special01</name>
+        </Item>
+        <Item>
+            <scale>1</scale>
+            <rotation x="-0" y="-0" z="-0.707107" w="0.707107" />
+            <position x="-110" y="0" z="34.74" />
+            <name>Slot_Special02</name>
+        </Item>
+        <Item>
+            <scale>1</scale>
+            <rotation x="0" y="0" z="1" w="4.37114E-08" />
+            <position x="0" y="110" z="34.74" />
+            <name>Slot_Special03</name>
+        </Item>
+        <Item>
+            <scale>1</scale>
+            <rotation x="0" y="0" z="0.707107" w="0.707107" />
+            <position x="110" y="0" z="34.74" />
+            <name>Slot_Special04</name>
+        </Item>
+        <Item>
+            <scale>1</scale>
+            <rotation x="0" y="0" z="0.707107" w="0.707107" />
+            <position x="-4E-06" y="-4E-06" z="217.707" />
+            <name>Slot_Special05</name>
+        </Item>
+        <Item>
+            <scale>1</scale>
+            <rotation x="0" y="0" z="-0.382683" w="0.92388" />
+            <position x="-106.897" y="-106.897" z="11.9575" />
+            <name>Slot_Special06</name>
+        </Item>
+        <Item>
+            <scale>1</scale>
+            <rotation x="-0" y="-0" z="-0.92388" w="0.382683" />
+            <position x="-106.897" y="106.897" z="11.9575" />
+            <name>Slot_Special07</name>
+        </Item>
+        <Item>
+            <scale>1</scale>
+            <rotation x="0" y="0" z="0.92388" w="0.382683" />
+            <position x="106.897" y="106.897" z="11.9575" />
+            <name>Slot_Special08</name>
+        </Item>
+        <Item>
+            <scale>1</scale>
+            <rotation x="0" y="0" z="0.382683" w="0.92388" />
+            <position x="106.897" y="-106.897" z="11.9575" />
+            <name>Slot_Special09</name>
+        </Item>
+    </sceneNodes>
+    <scaleDistanceStart>-1</scaleDistanceStart>
+    <scaleDistanceEnd>-1</scaleDistanceEnd>
+    <realSkeletonSize>10</realSkeletonSize>
+    <portalModel>false</portalModel>
+    <portalFragments />
+    <parts />
+    <orientationMode>COMMON</orientationMode>
+    <optimizeMesh>true</optimizeMesh>
+    <occluderInfos />
+    <modelElements>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>Door</name>
+            <materialName>RW_Tep_Pyramid_EnterElement_07_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <params type="CommonMaterialParams">
+                    <vertexBakedLight>true</vertexBakedLight>
+                    <useMaskColor>false</useMaskColor>
+                    <specularColorModifier>0</specularColorModifier>
+                    <selfillum>false</selfillum>
+                    <envSpecularTexture href="/Creatures/ReflectMaps/ContourTex07.(Texture).xdb#xpointer(/Texture)" />
+                    <envReflectionTexture href="/Creatures/ReflectMaps/ContourTex08.(Texture).xdb#xpointer(/Texture)" />
+                    <effectMaskTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_EnterElement_07_FX.(Texture).xdb#xpointer(/Texture)" />
+                    <contourColorModifier>4737096</contourColorModifier>
+                </params>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_EnterElement_07.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>432</vertexBufferEnd>
+                    <vertexBufferBegin>0</vertexBufferBegin>
+                    <indexBufferEnd>1440</indexBufferEnd>
+                    <indexBufferBegin>0</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>432</vertexBufferEnd>
+                    <vertexBufferBegin>1</vertexBufferBegin>
+                    <indexBufferEnd>96711</indexBufferEnd>
+                    <indexBufferBegin>96018</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>432</vertexBufferEnd>
+                    <vertexBufferBegin>6</vertexBufferBegin>
+                    <indexBufferEnd>97059</indexBufferEnd>
+                    <indexBufferBegin>96711</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>Door</name>
+            <materialName>RW_Tep_Pyramid_Wall_02_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Wall_02.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>445</vertexBufferEnd>
+                    <vertexBufferBegin>432</vertexBufferBegin>
+                    <indexBufferEnd>1476</indexBufferEnd>
+                    <indexBufferBegin>1440</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>445</vertexBufferEnd>
+                    <vertexBufferBegin>434</vertexBufferBegin>
+                    <indexBufferEnd>97077</indexBufferEnd>
+                    <indexBufferBegin>97059</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>445</vertexBufferEnd>
+                    <vertexBufferBegin>435</vertexBufferBegin>
+                    <indexBufferEnd>97083</indexBufferEnd>
+                    <indexBufferBegin>97077</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>Elements</name>
+            <materialName>RW_Tep_Pyramid_Element_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Element.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>509</vertexBufferEnd>
+                    <vertexBufferBegin>445</vertexBufferBegin>
+                    <indexBufferEnd>1572</indexBufferEnd>
+                    <indexBufferBegin>1476</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>509</vertexBufferEnd>
+                    <vertexBufferBegin>445</vertexBufferBegin>
+                    <indexBufferEnd>97179</indexBufferEnd>
+                    <indexBufferBegin>97083</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>509</vertexBufferEnd>
+                    <vertexBufferBegin>445</vertexBufferBegin>
+                    <indexBufferEnd>97275</indexBufferEnd>
+                    <indexBufferBegin>97179</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>Pyramid</name>
+            <materialName>RW_Tep_Pyramid_Trim_02_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Trim_02.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>2669</vertexBufferEnd>
+                    <vertexBufferBegin>509</vertexBufferBegin>
+                    <indexBufferEnd>6708</indexBufferEnd>
+                    <indexBufferBegin>1572</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>2669</vertexBufferEnd>
+                    <vertexBufferBegin>509</vertexBufferBegin>
+                    <indexBufferEnd>101751</indexBufferEnd>
+                    <indexBufferBegin>97275</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>2669</vertexBufferEnd>
+                    <vertexBufferBegin>509</vertexBufferBegin>
+                    <indexBufferEnd>105327</indexBufferEnd>
+                    <indexBufferBegin>101751</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>Pyramid</name>
+            <materialName>RW_Tep_Pyramid_Side_01_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <params type="CommonMaterialParams">
+                    <vertexBakedLight>true</vertexBakedLight>
+                    <useMaskColor>false</useMaskColor>
+                    <specularColorModifier>0</specularColorModifier>
+                    <selfillum>false</selfillum>
+                    <envSpecularTexture href="/Creatures/ReflectMaps/ContourTex08.(Texture).xdb#xpointer(/Texture)" />
+                    <envReflectionTexture href="/Creatures/ReflectMaps/Refmap15.(Texture).xdb#xpointer(/Texture)" />
+                    <effectMaskTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Side_01_FX.(Texture).xdb#xpointer(/Texture)" />
+                    <contourColorModifier>4737096</contourColorModifier>
+                </params>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Side_01.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>2977</vertexBufferEnd>
+                    <vertexBufferBegin>2669</vertexBufferBegin>
+                    <indexBufferEnd>7932</indexBufferEnd>
+                    <indexBufferBegin>6708</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>2977</vertexBufferEnd>
+                    <vertexBufferBegin>2669</vertexBufferBegin>
+                    <indexBufferEnd>106443</indexBufferEnd>
+                    <indexBufferBegin>105327</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>2977</vertexBufferEnd>
+                    <vertexBufferBegin>2669</vertexBufferBegin>
+                    <indexBufferEnd>107295</indexBufferEnd>
+                    <indexBufferBegin>106443</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>Pyramid</name>
+            <materialName>RW_Tep_Pyramid_Wall_01_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Wall_01.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>7809</vertexBufferEnd>
+                    <vertexBufferBegin>2977</vertexBufferBegin>
+                    <indexBufferEnd>20124</indexBufferEnd>
+                    <indexBufferBegin>7932</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>7809</vertexBufferEnd>
+                    <vertexBufferBegin>2977</vertexBufferBegin>
+                    <indexBufferEnd>117063</indexBufferEnd>
+                    <indexBufferBegin>107295</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>7808</vertexBufferEnd>
+                    <vertexBufferBegin>2977</vertexBufferBegin>
+                    <indexBufferEnd>123009</indexBufferEnd>
+                    <indexBufferBegin>117063</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>Pyramid</name>
+            <materialName>RW_Tep_Pyramid_Wall_03_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Wall_03.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>10694</vertexBufferEnd>
+                    <vertexBufferBegin>7809</vertexBufferBegin>
+                    <indexBufferEnd>28932</indexBufferEnd>
+                    <indexBufferBegin>20124</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>10694</vertexBufferEnd>
+                    <vertexBufferBegin>7809</vertexBufferBegin>
+                    <indexBufferEnd>129015</indexBufferEnd>
+                    <indexBufferBegin>123009</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>10698</vertexBufferEnd>
+                    <vertexBufferBegin>7809</vertexBufferBegin>
+                    <indexBufferEnd>133440</indexBufferEnd>
+                    <indexBufferBegin>129015</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>Pyramid</name>
+            <materialName>RW_Tep_Pyramid_Inter_Wall_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <params type="CommonMaterialParams">
+                    <vertexBakedLight>true</vertexBakedLight>
+                    <useMaskColor>false</useMaskColor>
+                    <specularColorModifier>0</specularColorModifier>
+                    <selfillum>false</selfillum>
+                    <envSpecularTexture href="/Creatures/ReflectMaps/ContourTex08.(Texture).xdb#xpointer(/Texture)" />
+                    <envReflectionTexture href="/Creatures/ReflectMaps/Refmap15.(Texture).xdb#xpointer(/Texture)" />
+                    <effectMaskTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Inter_Wall_FX.(Texture).xdb#xpointer(/Texture)" />
+                    <contourColorModifier>4737096</contourColorModifier>
+                </params>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Inter_Wall.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>10938</vertexBufferEnd>
+                    <vertexBufferBegin>10698</vertexBufferBegin>
+                    <indexBufferEnd>29436</indexBufferEnd>
+                    <indexBufferBegin>28932</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>10938</vertexBufferEnd>
+                    <vertexBufferBegin>10698</vertexBufferBegin>
+                    <indexBufferEnd>133800</indexBufferEnd>
+                    <indexBufferBegin>133440</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>10938</vertexBufferEnd>
+                    <vertexBufferBegin>10698</vertexBufferBegin>
+                    <indexBufferEnd>134160</indexBufferEnd>
+                    <indexBufferBegin>133800</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>Pyramid</name>
+            <materialName>RW_Tep_Pyramid_Trim_01_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Trim_01.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>11082</vertexBufferEnd>
+                    <vertexBufferBegin>10938</vertexBufferBegin>
+                    <indexBufferEnd>30012</indexBufferEnd>
+                    <indexBufferBegin>29436</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>11082</vertexBufferEnd>
+                    <vertexBufferBegin>10938</vertexBufferBegin>
+                    <indexBufferEnd>134628</indexBufferEnd>
+                    <indexBufferBegin>134160</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>11082</vertexBufferEnd>
+                    <vertexBufferBegin>10938</vertexBufferBegin>
+                    <indexBufferEnd>135072</indexBufferEnd>
+                    <indexBufferBegin>134628</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>Pyramid</name>
+            <materialName>RW_Tep_Pyramid_Inter_Wall_02_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <params type="CommonMaterialParams">
+                    <vertexBakedLight>true</vertexBakedLight>
+                    <useMaskColor>false</useMaskColor>
+                    <specularColorModifier>0</specularColorModifier>
+                    <selfillum>false</selfillum>
+                    <envSpecularTexture href="/Creatures/ReflectMaps/ContourTex07.(Texture).xdb#xpointer(/Texture)" />
+                    <envReflectionTexture href="/Creatures/ReflectMaps/ContourTex08.(Texture).xdb#xpointer(/Texture)" />
+                    <effectMaskTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Inter_Wall_02FX.(Texture).xdb#xpointer(/Texture)" />
+                    <contourColorModifier>4737096</contourColorModifier>
+                </params>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Inter_Wall_02.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>11170</vertexBufferEnd>
+                    <vertexBufferBegin>11082</vertexBufferBegin>
+                    <indexBufferEnd>30228</indexBufferEnd>
+                    <indexBufferBegin>30012</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>11170</vertexBufferEnd>
+                    <vertexBufferBegin>11082</vertexBufferBegin>
+                    <indexBufferEnd>135210</indexBufferEnd>
+                    <indexBufferBegin>135072</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>11170</vertexBufferEnd>
+                    <vertexBufferBegin>11084</vertexBufferBegin>
+                    <indexBufferEnd>135330</indexBufferEnd>
+                    <indexBufferBegin>135210</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>Devices</name>
+            <materialName>RW_Tep_Pyramid_Device_03_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Device_03.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>12838</vertexBufferEnd>
+                    <vertexBufferBegin>11170</vertexBufferBegin>
+                    <indexBufferEnd>36324</indexBufferEnd>
+                    <indexBufferBegin>30228</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>12836</vertexBufferEnd>
+                    <vertexBufferBegin>11170</vertexBufferBegin>
+                    <indexBufferEnd>138732</indexBufferEnd>
+                    <indexBufferBegin>135330</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>12836</vertexBufferEnd>
+                    <vertexBufferBegin>11170</vertexBufferBegin>
+                    <indexBufferEnd>140826</indexBufferEnd>
+                    <indexBufferBegin>138732</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>Devices</name>
+            <materialName>RW_Tep_Pyramid_EnterElement_08_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <params type="CommonMaterialParams">
+                    <vertexBakedLight>true</vertexBakedLight>
+                    <useMaskColor>false</useMaskColor>
+                    <specularColorModifier>0</specularColorModifier>
+                    <selfillum>false</selfillum>
+                    <envSpecularTexture href="/Creatures/ReflectMaps/ContourTex07.(Texture).xdb#xpointer(/Texture)" />
+                    <envReflectionTexture href="" />
+                    <effectMaskTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_EnterElement_08_FX.(Texture).xdb#xpointer(/Texture)" />
+                    <contourColorModifier>4737096</contourColorModifier>
+                </params>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_EnterElement_08.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>13014</vertexBufferEnd>
+                    <vertexBufferBegin>12838</vertexBufferBegin>
+                    <indexBufferEnd>36924</indexBufferEnd>
+                    <indexBufferBegin>36324</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>13014</vertexBufferEnd>
+                    <vertexBufferBegin>12838</vertexBufferBegin>
+                    <indexBufferEnd>141378</indexBufferEnd>
+                    <indexBufferBegin>140826</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>13022</vertexBufferEnd>
+                    <vertexBufferBegin>12838</vertexBufferBegin>
+                    <indexBufferEnd>141930</indexBufferEnd>
+                    <indexBufferBegin>141378</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>Devices</name>
+            <materialName>RW_Tep_Pyramid_Wall_02_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Wall_02.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>13590</vertexBufferEnd>
+                    <vertexBufferBegin>13014</vertexBufferBegin>
+                    <indexBufferEnd>38844</indexBufferEnd>
+                    <indexBufferBegin>36924</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>13590</vertexBufferEnd>
+                    <vertexBufferBegin>13014</vertexBufferBegin>
+                    <indexBufferEnd>142902</indexBufferEnd>
+                    <indexBufferBegin>141930</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>13583</vertexBufferEnd>
+                    <vertexBufferBegin>13014</vertexBufferBegin>
+                    <indexBufferEnd>143460</indexBufferEnd>
+                    <indexBufferBegin>142902</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>Devices</name>
+            <materialName>RW_Tep_Pyramid_Device_02_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Device_02.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>15654</vertexBufferEnd>
+                    <vertexBufferBegin>13590</vertexBufferBegin>
+                    <indexBufferEnd>45636</indexBufferEnd>
+                    <indexBufferBegin>38844</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>15654</vertexBufferEnd>
+                    <vertexBufferBegin>13590</vertexBufferBegin>
+                    <indexBufferEnd>149124</indexBufferEnd>
+                    <indexBufferBegin>143460</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>15654</vertexBufferEnd>
+                    <vertexBufferBegin>13590</vertexBufferBegin>
+                    <indexBufferEnd>153156</indexBufferEnd>
+                    <indexBufferBegin>149124</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>Devices</name>
+            <materialName>RW_Tep_Pyramid_EnterWall_03_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <params type="CommonMaterialParams">
+                    <vertexBakedLight>true</vertexBakedLight>
+                    <useMaskColor>false</useMaskColor>
+                    <specularColorModifier>0</specularColorModifier>
+                    <selfillum>false</selfillum>
+                    <envSpecularTexture href="/Creatures/ReflectMaps/ContourTex07.(Texture).xdb#xpointer(/Texture)" />
+                    <envReflectionTexture href="/Creatures/ReflectMaps/ContourTex06.(Texture).xdb#xpointer(/Texture)" />
+                    <effectMaskTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_EnterWall_03_FX.(Texture).xdb#xpointer(/Texture)" />
+                    <contourColorModifier>4737096</contourColorModifier>
+                </params>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_EnterWall_03.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>15742</vertexBufferEnd>
+                    <vertexBufferBegin>15654</vertexBufferBegin>
+                    <indexBufferEnd>45852</indexBufferEnd>
+                    <indexBufferBegin>45636</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>15742</vertexBufferEnd>
+                    <vertexBufferBegin>15654</vertexBufferBegin>
+                    <indexBufferEnd>153348</indexBufferEnd>
+                    <indexBufferBegin>153156</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>15742</vertexBufferEnd>
+                    <vertexBufferBegin>15654</vertexBufferBegin>
+                    <indexBufferEnd>153540</indexBufferEnd>
+                    <indexBufferBegin>153348</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>Devices</name>
+            <materialName>RW_Tep_Pyramid_EnterElement_07_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <params type="CommonMaterialParams">
+                    <vertexBakedLight>true</vertexBakedLight>
+                    <useMaskColor>false</useMaskColor>
+                    <specularColorModifier>0</specularColorModifier>
+                    <selfillum>false</selfillum>
+                    <envSpecularTexture href="/Creatures/ReflectMaps/ContourTex07.(Texture).xdb#xpointer(/Texture)" />
+                    <envReflectionTexture href="/Creatures/ReflectMaps/ContourTex08.(Texture).xdb#xpointer(/Texture)" />
+                    <effectMaskTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_EnterElement_07_FX.(Texture).xdb#xpointer(/Texture)" />
+                    <contourColorModifier>4737096</contourColorModifier>
+                </params>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_EnterElement_07.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>15774</vertexBufferEnd>
+                    <vertexBufferBegin>15742</vertexBufferBegin>
+                    <indexBufferEnd>45924</indexBufferEnd>
+                    <indexBufferBegin>45852</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>15774</vertexBufferEnd>
+                    <vertexBufferBegin>15742</vertexBufferBegin>
+                    <indexBufferEnd>153612</indexBufferEnd>
+                    <indexBufferBegin>153540</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>15774</vertexBufferEnd>
+                    <vertexBufferBegin>15742</vertexBufferBegin>
+                    <indexBufferEnd>153684</indexBufferEnd>
+                    <indexBufferBegin>153612</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>Devices</name>
+            <materialName>RW_Tep_Pyramid_EnterElement_05_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <params type="CommonMaterialParams">
+                    <vertexBakedLight>true</vertexBakedLight>
+                    <useMaskColor>false</useMaskColor>
+                    <specularColorModifier>0</specularColorModifier>
+                    <selfillum>false</selfillum>
+                    <envSpecularTexture href="/Creatures/ReflectMaps/ContourTex07.(Texture).xdb#xpointer(/Texture)" />
+                    <envReflectionTexture href="" />
+                    <effectMaskTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_EnterElement_05_FX.(Texture).xdb#xpointer(/Texture)" />
+                    <contourColorModifier>4737096</contourColorModifier>
+                </params>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_EnterElement_05.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>15934</vertexBufferEnd>
+                    <vertexBufferBegin>15774</vertexBufferBegin>
+                    <indexBufferEnd>46356</indexBufferEnd>
+                    <indexBufferBegin>45924</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>15934</vertexBufferEnd>
+                    <vertexBufferBegin>15774</vertexBufferBegin>
+                    <indexBufferEnd>153984</indexBufferEnd>
+                    <indexBufferBegin>153684</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>15934</vertexBufferEnd>
+                    <vertexBufferBegin>15774</vertexBufferBegin>
+                    <indexBufferEnd>154200</indexBufferEnd>
+                    <indexBufferBegin>153984</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>Devices</name>
+            <materialName>RW_Tep_Pyramid_Face_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <params type="CommonMaterialParams">
+                    <vertexBakedLight>true</vertexBakedLight>
+                    <useMaskColor>false</useMaskColor>
+                    <specularColorModifier>0</specularColorModifier>
+                    <selfillum>false</selfillum>
+                    <envSpecularTexture href="/Creatures/ReflectMaps/ContourTex08.(Texture).xdb#xpointer(/Texture)" />
+                    <envReflectionTexture href="/Creatures/ReflectMaps/Refmap15.(Texture).xdb#xpointer(/Texture)" />
+                    <effectMaskTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Face_FX.(Texture).xdb#xpointer(/Texture)" />
+                    <contourColorModifier>4737096</contourColorModifier>
+                </params>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Face.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>16414</vertexBufferEnd>
+                    <vertexBufferBegin>15934</vertexBufferBegin>
+                    <indexBufferEnd>47940</indexBufferEnd>
+                    <indexBufferBegin>46356</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>16413</vertexBufferEnd>
+                    <vertexBufferBegin>15934</vertexBufferBegin>
+                    <indexBufferEnd>155088</indexBufferEnd>
+                    <indexBufferBegin>154200</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>16413</vertexBufferEnd>
+                    <vertexBufferBegin>15934</vertexBufferBegin>
+                    <indexBufferEnd>155616</indexBufferEnd>
+                    <indexBufferBegin>155088</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>Devices</name>
+            <materialName>RW_Tep_Pyramid_EnterElement_04_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <params type="CommonMaterialParams">
+                    <vertexBakedLight>true</vertexBakedLight>
+                    <useMaskColor>false</useMaskColor>
+                    <specularColorModifier>0</specularColorModifier>
+                    <selfillum>false</selfillum>
+                    <envSpecularTexture href="/Creatures/ReflectMaps/ContourTex08.(Texture).xdb#xpointer(/Texture)" />
+                    <envReflectionTexture href="/Creatures/ReflectMaps/Refmap15.(Texture).xdb#xpointer(/Texture)" />
+                    <effectMaskTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_EnterElement_04_FX.(Texture).xdb#xpointer(/Texture)" />
+                    <contourColorModifier>4737096</contourColorModifier>
+                </params>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_EnterElement_04.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>16646</vertexBufferEnd>
+                    <vertexBufferBegin>16414</vertexBufferBegin>
+                    <indexBufferEnd>48660</indexBufferEnd>
+                    <indexBufferBegin>47940</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>16646</vertexBufferEnd>
+                    <vertexBufferBegin>16414</vertexBufferBegin>
+                    <indexBufferEnd>156300</indexBufferEnd>
+                    <indexBufferBegin>155616</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>16646</vertexBufferEnd>
+                    <vertexBufferBegin>16414</vertexBufferBegin>
+                    <indexBufferEnd>156852</indexBufferEnd>
+                    <indexBufferBegin>156300</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>Devices</name>
+            <materialName>RW_Tep_Pyramid_FaceElement_02_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <params type="CommonMaterialParams">
+                    <vertexBakedLight>true</vertexBakedLight>
+                    <useMaskColor>false</useMaskColor>
+                    <specularColorModifier>0</specularColorModifier>
+                    <selfillum>false</selfillum>
+                    <envSpecularTexture href="/Creatures/ReflectMaps/ContourTex08.(Texture).xdb#xpointer(/Texture)" />
+                    <envReflectionTexture href="/Creatures/ReflectMaps/Refmap15.(Texture).xdb#xpointer(/Texture)" />
+                    <effectMaskTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_FaceElement_02_FX.(Texture).xdb#xpointer(/Texture)" />
+                    <contourColorModifier>4737096</contourColorModifier>
+                </params>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_FaceElement_02.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>16866</vertexBufferEnd>
+                    <vertexBufferBegin>16646</vertexBufferBegin>
+                    <indexBufferEnd>49380</indexBufferEnd>
+                    <indexBufferBegin>48660</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>16866</vertexBufferEnd>
+                    <vertexBufferBegin>16646</vertexBufferBegin>
+                    <indexBufferEnd>157368</indexBufferEnd>
+                    <indexBufferBegin>156852</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>16866</vertexBufferEnd>
+                    <vertexBufferBegin>16647</vertexBufferBegin>
+                    <indexBufferEnd>157776</indexBufferEnd>
+                    <indexBufferBegin>157368</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>Devices</name>
+            <materialName>RW_Tep_Pyramid_Side_01_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <params type="CommonMaterialParams">
+                    <vertexBakedLight>true</vertexBakedLight>
+                    <useMaskColor>false</useMaskColor>
+                    <specularColorModifier>0</specularColorModifier>
+                    <selfillum>false</selfillum>
+                    <envSpecularTexture href="/Creatures/ReflectMaps/ContourTex08.(Texture).xdb#xpointer(/Texture)" />
+                    <envReflectionTexture href="/Creatures/ReflectMaps/Refmap15.(Texture).xdb#xpointer(/Texture)" />
+                    <effectMaskTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Side_01_FX.(Texture).xdb#xpointer(/Texture)" />
+                    <contourColorModifier>4737096</contourColorModifier>
+                </params>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Side_01.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>16906</vertexBufferEnd>
+                    <vertexBufferBegin>16866</vertexBufferBegin>
+                    <indexBufferEnd>49452</indexBufferEnd>
+                    <indexBufferBegin>49380</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>16906</vertexBufferEnd>
+                    <vertexBufferBegin>16866</vertexBufferBegin>
+                    <indexBufferEnd>157848</indexBufferEnd>
+                    <indexBufferBegin>157776</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>16906</vertexBufferEnd>
+                    <vertexBufferBegin>16866</vertexBufferBegin>
+                    <indexBufferEnd>157920</indexBufferEnd>
+                    <indexBufferBegin>157848</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>Devices</name>
+            <materialName>RW_Tep_Pyramid_Device_04_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Device_04.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>19490</vertexBufferEnd>
+                    <vertexBufferBegin>16906</vertexBufferBegin>
+                    <indexBufferEnd>59100</indexBufferEnd>
+                    <indexBufferBegin>49452</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>19490</vertexBufferEnd>
+                    <vertexBufferBegin>16906</vertexBufferBegin>
+                    <indexBufferEnd>164052</indexBufferEnd>
+                    <indexBufferBegin>157920</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>19489</vertexBufferEnd>
+                    <vertexBufferBegin>16906</vertexBufferBegin>
+                    <indexBufferEnd>167508</indexBufferEnd>
+                    <indexBufferBegin>164052</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>Devices</name>
+            <materialName>RW_Tep_Pyramid_Device_05_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Device_05.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>19939</vertexBufferEnd>
+                    <vertexBufferBegin>10694</vertexBufferBegin>
+                    <indexBufferEnd>60924</indexBufferEnd>
+                    <indexBufferBegin>59100</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>19937</vertexBufferEnd>
+                    <vertexBufferBegin>10694</vertexBufferBegin>
+                    <indexBufferEnd>168828</indexBufferEnd>
+                    <indexBufferBegin>167508</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>19935</vertexBufferEnd>
+                    <vertexBufferBegin>10694</vertexBufferBegin>
+                    <indexBufferEnd>169920</indexBufferEnd>
+                    <indexBufferBegin>168828</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>Devices</name>
+            <materialName>RW_Tep_Pyramid_Device_01_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Device_01.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>27115</vertexBufferEnd>
+                    <vertexBufferBegin>19939</vertexBufferBegin>
+                    <indexBufferEnd>83652</indexBufferEnd>
+                    <indexBufferBegin>60924</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>27115</vertexBufferEnd>
+                    <vertexBufferBegin>19939</vertexBufferBegin>
+                    <indexBufferEnd>182286</indexBufferEnd>
+                    <indexBufferBegin>169920</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>27115</vertexBufferEnd>
+                    <vertexBufferBegin>19939</vertexBufferBegin>
+                    <indexBufferEnd>189108</indexBufferEnd>
+                    <indexBufferBegin>182286</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>Devices</name>
+            <materialName>Undead_Hadagan_Capital_Interior_Door_02_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <diffuseTexture href="/World/Races/Undead/Buildings/Textures/Undead_Hadagan_Capital_Interior_Door_02.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>27355</vertexBufferEnd>
+                    <vertexBufferBegin>27115</vertexBufferBegin>
+                    <indexBufferEnd>84804</indexBufferEnd>
+                    <indexBufferBegin>83652</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>27355</vertexBufferEnd>
+                    <vertexBufferBegin>27116</vertexBufferBegin>
+                    <indexBufferEnd>189588</indexBufferEnd>
+                    <indexBufferBegin>189108</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>27355</vertexBufferEnd>
+                    <vertexBufferBegin>27116</vertexBufferBegin>
+                    <indexBufferEnd>189828</indexBufferEnd>
+                    <indexBufferBegin>189588</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>PyramidUp</name>
+            <materialName>RW_Tep_Pyramid_Inter_Wall_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <params type="CommonMaterialParams">
+                    <vertexBakedLight>true</vertexBakedLight>
+                    <useMaskColor>false</useMaskColor>
+                    <specularColorModifier>0</specularColorModifier>
+                    <selfillum>false</selfillum>
+                    <envSpecularTexture href="/Creatures/ReflectMaps/ContourTex08.(Texture).xdb#xpointer(/Texture)" />
+                    <envReflectionTexture href="/Creatures/ReflectMaps/Refmap15.(Texture).xdb#xpointer(/Texture)" />
+                    <effectMaskTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Inter_Wall_FX.(Texture).xdb#xpointer(/Texture)" />
+                    <contourColorModifier>4737096</contourColorModifier>
+                </params>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Inter_Wall.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>27485</vertexBufferEnd>
+                    <vertexBufferBegin>27355</vertexBufferBegin>
+                    <indexBufferEnd>85044</indexBufferEnd>
+                    <indexBufferBegin>84804</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>27485</vertexBufferEnd>
+                    <vertexBufferBegin>27355</vertexBufferBegin>
+                    <indexBufferEnd>190059</indexBufferEnd>
+                    <indexBufferBegin>189828</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>27485</vertexBufferEnd>
+                    <vertexBufferBegin>27355</vertexBufferBegin>
+                    <indexBufferEnd>190245</indexBufferEnd>
+                    <indexBufferBegin>190059</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>PyramidUp</name>
+            <materialName>RW_Tep_Pyramid_EnterWall_03_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <params type="CommonMaterialParams">
+                    <vertexBakedLight>true</vertexBakedLight>
+                    <useMaskColor>false</useMaskColor>
+                    <specularColorModifier>0</specularColorModifier>
+                    <selfillum>false</selfillum>
+                    <envSpecularTexture href="/Creatures/ReflectMaps/ContourTex07.(Texture).xdb#xpointer(/Texture)" />
+                    <envReflectionTexture href="/Creatures/ReflectMaps/ContourTex06.(Texture).xdb#xpointer(/Texture)" />
+                    <effectMaskTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_EnterWall_03_FX.(Texture).xdb#xpointer(/Texture)" />
+                    <contourColorModifier>4737096</contourColorModifier>
+                </params>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_EnterWall_03.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>27561</vertexBufferEnd>
+                    <vertexBufferBegin>27485</vertexBufferBegin>
+                    <indexBufferEnd>85230</indexBufferEnd>
+                    <indexBufferBegin>85044</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>27561</vertexBufferEnd>
+                    <vertexBufferBegin>27485</vertexBufferBegin>
+                    <indexBufferEnd>190413</indexBufferEnd>
+                    <indexBufferBegin>190245</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>27561</vertexBufferEnd>
+                    <vertexBufferBegin>27485</vertexBufferBegin>
+                    <indexBufferEnd>190557</indexBufferEnd>
+                    <indexBufferBegin>190413</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>PyramidUp</name>
+            <materialName>RW_Tep_Pyramid_Trim_02_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Trim_02.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>27924</vertexBufferEnd>
+                    <vertexBufferBegin>27561</vertexBufferBegin>
+                    <indexBufferEnd>86124</indexBufferEnd>
+                    <indexBufferBegin>85230</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>27924</vertexBufferEnd>
+                    <vertexBufferBegin>27561</vertexBufferBegin>
+                    <indexBufferEnd>191295</indexBufferEnd>
+                    <indexBufferBegin>190557</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>27924</vertexBufferEnd>
+                    <vertexBufferBegin>27561</vertexBufferBegin>
+                    <indexBufferEnd>191850</indexBufferEnd>
+                    <indexBufferBegin>191295</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>PyramidUp</name>
+            <materialName>RW_Tep_Pyramid_Inter_Wall_02_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <params type="CommonMaterialParams">
+                    <vertexBakedLight>true</vertexBakedLight>
+                    <useMaskColor>false</useMaskColor>
+                    <specularColorModifier>0</specularColorModifier>
+                    <selfillum>false</selfillum>
+                    <envSpecularTexture href="/Creatures/ReflectMaps/ContourTex07.(Texture).xdb#xpointer(/Texture)" />
+                    <envReflectionTexture href="/Creatures/ReflectMaps/ContourTex08.(Texture).xdb#xpointer(/Texture)" />
+                    <effectMaskTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Inter_Wall_02FX.(Texture).xdb#xpointer(/Texture)" />
+                    <contourColorModifier>4737096</contourColorModifier>
+                </params>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Inter_Wall_02.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>27978</vertexBufferEnd>
+                    <vertexBufferBegin>27924</vertexBufferBegin>
+                    <indexBufferEnd>86238</indexBufferEnd>
+                    <indexBufferBegin>86124</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>27978</vertexBufferEnd>
+                    <vertexBufferBegin>27924</vertexBufferBegin>
+                    <indexBufferEnd>191964</indexBufferEnd>
+                    <indexBufferBegin>191850</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>27978</vertexBufferEnd>
+                    <vertexBufferBegin>27924</vertexBufferBegin>
+                    <indexBufferEnd>192066</indexBufferEnd>
+                    <indexBufferBegin>191964</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>PyramidUp</name>
+            <materialName>RW_Tep_Pyramid_Top_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Top.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>28619</vertexBufferEnd>
+                    <vertexBufferBegin>27978</vertexBufferBegin>
+                    <indexBufferEnd>87966</indexBufferEnd>
+                    <indexBufferBegin>86238</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>28619</vertexBufferEnd>
+                    <vertexBufferBegin>27978</vertexBufferBegin>
+                    <indexBufferEnd>193113</indexBufferEnd>
+                    <indexBufferBegin>192066</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>28596</vertexBufferEnd>
+                    <vertexBufferBegin>27984</vertexBufferBegin>
+                    <indexBufferEnd>193758</indexBufferEnd>
+                    <indexBufferBegin>193113</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>PyramidUp</name>
+            <materialName>TenzisTemple_Floor_06_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <diffuseTexture href="/World/Dungeons/TenzisTemple/Textures/TenzisTemple_Floor_06.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>28677</vertexBufferEnd>
+                    <vertexBufferBegin>28619</vertexBufferBegin>
+                    <indexBufferEnd>88104</indexBufferEnd>
+                    <indexBufferBegin>87966</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>28677</vertexBufferEnd>
+                    <vertexBufferBegin>28619</vertexBufferBegin>
+                    <indexBufferEnd>193860</indexBufferEnd>
+                    <indexBufferBegin>193758</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>28677</vertexBufferEnd>
+                    <vertexBufferBegin>28619</vertexBufferBegin>
+                    <indexBufferEnd>193962</indexBufferEnd>
+                    <indexBufferBegin>193860</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>PyramidUp</name>
+            <materialName>RW_Tep_Pyramid_Wall_03_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Wall_03.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>28697</vertexBufferEnd>
+                    <vertexBufferBegin>28677</vertexBufferBegin>
+                    <indexBufferEnd>88152</indexBufferEnd>
+                    <indexBufferBegin>88104</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>28697</vertexBufferEnd>
+                    <vertexBufferBegin>28677</vertexBufferBegin>
+                    <indexBufferEnd>194010</indexBufferEnd>
+                    <indexBufferBegin>193962</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>28697</vertexBufferEnd>
+                    <vertexBufferBegin>28677</vertexBufferBegin>
+                    <indexBufferEnd>194058</indexBufferEnd>
+                    <indexBufferBegin>194010</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>PyramidUp</name>
+            <materialName>TenzisTemple_Stairs_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <diffuseTexture href="/World/Dungeons/TenzisTemple/Textures/TenzisTemple_Stairs.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>28712</vertexBufferEnd>
+                    <vertexBufferBegin>28697</vertexBufferBegin>
+                    <indexBufferEnd>88176</indexBufferEnd>
+                    <indexBufferBegin>88152</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>28712</vertexBufferEnd>
+                    <vertexBufferBegin>28697</vertexBufferBegin>
+                    <indexBufferEnd>194082</indexBufferEnd>
+                    <indexBufferBegin>194058</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>28712</vertexBufferEnd>
+                    <vertexBufferBegin>28697</vertexBufferBegin>
+                    <indexBufferEnd>194106</indexBufferEnd>
+                    <indexBufferBegin>194082</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>PyramidUp</name>
+            <materialName>RW_Tep_Pyramid_Wall_01_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Wall_01.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>28728</vertexBufferEnd>
+                    <vertexBufferBegin>28712</vertexBufferBegin>
+                    <indexBufferEnd>88194</indexBufferEnd>
+                    <indexBufferBegin>88176</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>28728</vertexBufferEnd>
+                    <vertexBufferBegin>28712</vertexBufferBegin>
+                    <indexBufferEnd>194124</indexBufferEnd>
+                    <indexBufferBegin>194106</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>28728</vertexBufferEnd>
+                    <vertexBufferBegin>28712</vertexBufferBegin>
+                    <indexBufferEnd>194139</indexBufferEnd>
+                    <indexBufferBegin>194124</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>PyramidUp</name>
+            <materialName>RW_Tep_Pyramid_EnterElement_08_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <params type="CommonMaterialParams">
+                    <vertexBakedLight>true</vertexBakedLight>
+                    <useMaskColor>false</useMaskColor>
+                    <specularColorModifier>0</specularColorModifier>
+                    <selfillum>false</selfillum>
+                    <envSpecularTexture href="/Creatures/ReflectMaps/ContourTex07.(Texture).xdb#xpointer(/Texture)" />
+                    <envReflectionTexture href="" />
+                    <effectMaskTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_EnterElement_08_FX.(Texture).xdb#xpointer(/Texture)" />
+                    <contourColorModifier>4737096</contourColorModifier>
+                </params>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_EnterElement_08.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>28788</vertexBufferEnd>
+                    <vertexBufferBegin>28728</vertexBufferBegin>
+                    <indexBufferEnd>88338</indexBufferEnd>
+                    <indexBufferBegin>88194</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>28788</vertexBufferEnd>
+                    <vertexBufferBegin>28728</vertexBufferBegin>
+                    <indexBufferEnd>194283</indexBufferEnd>
+                    <indexBufferBegin>194139</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>28787</vertexBufferEnd>
+                    <vertexBufferBegin>28728</vertexBufferBegin>
+                    <indexBufferEnd>194382</indexBufferEnd>
+                    <indexBufferBegin>194283</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+        <Item>
+            <virtualOffset>0</virtualOffset>
+            <vertexDeclarationID>0</vertexDeclarationID>
+            <vertexBufferOffset>0</vertexBufferOffset>
+            <skinIndex>-1</skinIndex>
+            <name>gears</name>
+            <materialName>RW_Tep_Pyramid_Device_02_psd_SG</materialName>
+            <material>
+                <visible>true</visible>
+                <vTranslateSpeed>0</vTranslateSpeed>
+                <useFog>true</useFog>
+                <uTranslateSpeed>0</uTranslateSpeed>
+                <transparent>false</transparent>
+                <transparencyTexture href="" />
+                <scrollRGB>true</scrollRGB>
+                <scrollAlpha>true</scrollAlpha>
+                <diffuseTexture href="/World/TepIsland/RealWorld/Textures/RW_Tep_Pyramid_Device_02.(Texture).xdb#xpointer(/Texture)" />
+                <BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+            </material>
+            <lods>
+                <Item>
+                    <vertexBufferEnd>31188</vertexBufferEnd>
+                    <vertexBufferBegin>28788</vertexBufferBegin>
+                    <indexBufferEnd>96018</indexBufferEnd>
+                    <indexBufferBegin>88338</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>31188</vertexBufferEnd>
+                    <vertexBufferBegin>28788</vertexBufferBegin>
+                    <indexBufferEnd>200031</indexBufferEnd>
+                    <indexBufferBegin>194382</indexBufferBegin>
+                </Item>
+                <Item>
+                    <vertexBufferEnd>31186</vertexBufferEnd>
+                    <vertexBufferBegin>28788</vertexBufferBegin>
+                    <indexBufferEnd>203922</indexBufferEnd>
+                    <indexBufferBegin>200031</indexBufferBegin>
+                </Item>
+            </lods>
+            <linkedElements />
+        </Item>
+    </modelElements>
+    <lodModel>true</lodModel>
+    <lodFactor>1</lodFactor>
+    <lodDistances>
+        <Item>558.459</Item>
+        <Item>839.483</Item>
+    </lodDistances>
+    <largeModel>false</largeModel>
+    <joints>
+        <Item>
+            <name>Slot_Special01</name>
+            <id>700</id>
+        </Item>
+        <Item>
+            <name>Slot_Special02</name>
+            <id>701</id>
+        </Item>
+        <Item>
+            <name>Slot_Special03</name>
+            <id>702</id>
+        </Item>
+        <Item>
+            <name>Slot_Special04</name>
+            <id>703</id>
+        </Item>
+        <Item>
+            <name>Slot_Special05</name>
+            <id>704</id>
+        </Item>
+        <Item>
+            <name>Slot_Special06</name>
+            <id>705</id>
+        </Item>
+        <Item>
+            <name>Slot_Special07</name>
+            <id>706</id>
+        </Item>
+        <Item>
+            <name>Slot_Special08</name>
+            <id>707</id>
+        </Item>
+        <Item>
+            <name>Slot_Special09</name>
+            <id>708</id>
+        </Item>
+        <Item>
+            <name>VisualSceneNode</name>
+            <id>65535</id>
+        </Item>
+    </joints>
+    <indexBuffer>
+        <size>407844</size>
+        <localID>1</localID>
+    </indexBuffer>
+    <ignoreZ>false</ignoreZ>
+    <hideRule>DEFAULT</hideRule>
+    <globalID>-1</globalID>
+    <geometryFragments />
+    <geometryBox>
+        <center x="0" y="0" z="55.088" />
+        <extents x="141.61" y="141.61" z="199.477" />
+    </geometryBox>
+    <fogFactor>1</fogFactor>
+    <flareInfos />
+    <fadeDistanceStart>-1</fadeDistanceStart>
+    <fadeDistanceEnd>-1</fadeDistanceEnd>
+    <exportDefaultAnimation>true</exportDefaultAnimation>
+    <endFrame>100000</endFrame>
+    <enableDistanceFade>true</enableDistanceFade>
+    <decalModel>false</decalModel>
+    <castShadows>true</castShadows>
+    <binaryFile href="/World/TepIsland/RealWorld/Models/RW_Tep_Pyramid/RW_Tep_Pyramid_Exterior.(Geometry).bin" />
+    <areaFragments />
+    <absoluteDistanceFade>false</absoluteDistanceFade>
+    <aabb>
+        <center x="0" y="0" z="55.088" />
+        <extents x="141.61" y="141.61" z="199.477" />
+    </aabb>
+    <SkeletalAnimation href="" />
+</Geometry>
