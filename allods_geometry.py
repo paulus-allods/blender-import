@@ -444,7 +444,7 @@ class ImportGeometry(bpy.types.Operator, bpy_extras.io_utils.ImportHelper):
 bl_info = {
     'name': 'Allods Online geometry',
     'category': 'Import-Export',
-    'version': (0, 0, 1),
+    'version': (0, 0, 2),
     'blender': (2, 90, 0)
 }
 
