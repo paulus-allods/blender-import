@@ -424,8 +424,8 @@ class ImportGeometry(bpy.types.Operator, bpy_extras.io_utils.ImportHelper):
                 if not self.import_lods and i > 0:
                     break
                 lod_indices = indices[lod.index_buffer_begin//3:lod.index_buffer_end//3]
-                lod_vertices = [vertices[i] for i in set(itertools.chain.from_iterable(lod_indices))]
-                lod_indices_vertex = [(lod_vertices.index(vertices[i[0]]), lod_vertices.index(vertices[i[1]]), lod_vertices.index((vertices[i[2]]))) for i in lod_indices] 	
+                lod_vertices = [vertices[i + model_element.vertex_buffer_offset] for i in set(itertools.chain.from_iterable(lod_indices))]
+                lod_indices_vertex = [(lod_vertices.index(vertices[i[0] +  model_element.vertex_buffer_offset]), lod_vertices.index(vertices[i[1] +  model_element.vertex_buffer_offset]), lod_vertices.index((vertices[i[2] + model_element.vertex_buffer_offset]))) for i in lod_indices]
                 mesh = bpy.data.meshes.new(model_element.name + '_lod' + str(i))
                 mesh.from_pydata([v.position for v in lod_vertices], [], lod_indices_vertex)
                 mesh.update()
@@ -444,12 +444,9 @@ class ImportGeometry(bpy.types.Operator, bpy_extras.io_utils.ImportHelper):
 bl_info = {
     'name': 'Allods Online geometry',
     'category': 'Import-Export',
-    'version': (0, 0, 2),
+    'version': (0, 0, 3),
     'blender': (2, 90, 0)
 }
-
-moduleNames = ['import']
-moduleFullNames = []
 
 def menu_func_import(self, context):
     self.layout.operator(ImportGeometry.bl_idname, text="Allods Geometry (.bin)")
