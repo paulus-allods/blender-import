@@ -3,7 +3,6 @@ import bpy_extras
 import mathutils
 
 import io
-import itertools
 import pathlib
 import re
 import zlib
@@ -12,7 +11,112 @@ import distutils.util as du
 
 from enum import Enum
 from xml.etree import ElementTree
-from struct import pack, unpack, unpack_from
+from struct import pack, unpack, unpack_from, iter_unpack
+
+## Addon registration
+
+bl_info = {
+    'name': 'Allods Online geometry',
+    'category': 'Import-Export',
+    'version': (0, 0, 2),
+    'blender': (2, 90, 0)
+}
+
+def menu_func_import(self, context):
+    self.layout.operator(ImportGeometry.bl_idname, text="Allods Geometry (.bin)")
+
+def register():
+    bpy.utils.register_class(ImportGeometry)
+    bpy.types.TOPBAR_MT_file_import.append(menu_func_import)
+
+def unregister():
+    bpy.utils.unregister_class(ImportGeometry)
+    bpy.types.TOPBAR_MT_file_import.remove(menu_func_import)
+
+## Addon main code
+
+class ImportGeometry(bpy.types.Operator, bpy_extras.io_utils.ImportHelper):
+    """Load geometry files from Allods Online"""
+    bl_idname = "allods.import_geometry"
+    bl_label = "Import geometry"
+
+    filter_glob: bpy.props.StringProperty(
+        default="*.xdb",
+        options={'HIDDEN'},
+    )
+
+    import_lods: bpy.props.BoolProperty(
+        name="Import LODs",
+        description="Import all LOD models",
+        default=False,
+    )
+
+    def execute(self, context):
+        path = pathlib.Path(self.filepath)
+
+        parser = XdbParser(path)
+        bin_parser = BinParser(path.with_suffix('.bin'))
+
+        # Create vertex converters
+        vertex_bin_converters = []
+        for vertex_declaration in parser.get_vertex_declarations():
+            vertex_bin_converters.append(VertexBinConverter(vertex_declaration))
+
+        vertex_bin_converter = vertex_bin_converters[0] # vertex_declaration_id is always 0, otherwise need per element converter
+
+        # Parse vertices (points)
+        vertex_buffer = bin_parser.get_buffer(parser.get_vertex_buffer())
+        vertices = vertex_bin_converter.bin_to_vertices(vertex_buffer)
+
+        # Parse indices (faces)
+        index_buffer = bin_parser.get_buffer(parser.get_index_buffer())
+        indices = list(map(lambda i: i[0], iter_unpack('H', index_buffer)))
+
+        # Parse skeleton
+        skeleton_buffer = bin_parser.get_buffer(parser.get_skeleton())
+        skeleton_parser = BoneBinParser(skeleton_buffer)
+        bones = skeleton_parser.get_bones()
+
+        model_name = re.sub('(\.\(.*\))?\.xdb', '', path.name)
+
+        root_collection =  bpy.data.collections.new(model_name)
+        bpy.context.scene.collection.children.link(root_collection)
+
+        lod_collections = dict()
+        lod_collections[0] = root_collection
+
+        for model_element in parser.get_model_elements():
+
+            for lod_level, lod in enumerate(model_element.lods):
+                
+                if not self.import_lods and lod_level > 0:
+                    break
+
+                mesh_name =  f"{model_element.name}_lod{lod_level}" if lod_level > 0 else model_element.name
+
+                lod_indices = [indices[k] - lod.vertex_buffer_begin for k in range(lod.index_buffer_begin, lod.index_buffer_end)]
+                lod_vertices = vertices[lod.vertex_buffer_begin+model_element.vertex_buffer_offset:lod.vertex_buffer_end+model_element.vertex_buffer_offset]  
+
+                mesh = bpy.data.meshes.new(mesh_name)
+                mesh.from_pydata([v.position for v in lod_vertices], [], list(zip(lod_indices[0::3],lod_indices[1::3], lod_indices[2::3])))
+                mesh.update()
+
+                uv_layer = mesh.uv_layers.new()
+                for face in mesh.polygons:
+                    for vert_idx, loop_idx in zip(face.vertices, face.loop_indices):
+                        uv_layer.data[loop_idx].uv = lod_vertices[vert_idx].texcoord0
+
+                mesh_object = bpy.data.objects.new(mesh_name, mesh)
+
+                if lod_level not in lod_collections:
+                    lod_collection = bpy.data.collections.new(f"{model_name}_lod{lod_level}")
+                    root_collection.children.link(lod_collection)
+                    lod_collections[lod_level] = lod_collection
+                else:
+                    lod_collection = lod_collections[lod_level]
+                lod_collection.objects.link(mesh_object)
+
+        return {'FINISHED'}
 
 ## Geometry structures
 
@@ -248,7 +352,6 @@ class BoneBinParser:
     def __init__(self, buffer):
         self.buffer = buffer
         self.bones = None
-        
 
     def get_bones(self):
         if self.bones == None:
@@ -316,7 +419,6 @@ class VertexBinConverter:
             vertices.append(self.bin_to_vertex(buffer[offset:offset + self.vertex_declaration.stride]))
         return vertices
         
-
     @staticmethod
     def _read_vertex_component(vertex_component, buffer):
         if vertex_component.type == VertexElementType.FLOAT1:
@@ -374,87 +476,3 @@ class VertexBinConverter:
             pass
         else:
             raise Exception('Unknown value type: {}'.format(vertex_component.type))
-
-## Addon main code
-
-class ImportGeometry(bpy.types.Operator, bpy_extras.io_utils.ImportHelper):
-    """Load geometry files from Allods Online"""
-    bl_idname = "allods.import_geometry"
-    bl_label = "Import geometry"
-
-    filter_glob: bpy.props.StringProperty(
-        default="*.xdb",
-        options={'HIDDEN'},
-    )
-
-    import_lods: bpy.props.BoolProperty(
-        name="Import LODs",
-        description="Import all LOD models",
-        default=False,
-    )
-
-    def execute(self, context):
-        path = pathlib.Path(self.filepath)
-
-        parser = XdbParser(path)
-        bin_parser = BinParser(path.with_suffix('.bin'))
-
-        vertex_bin_converters = []
-        for vertex_declaration in parser.get_vertex_declarations():
-            vertex_bin_converters.append(VertexBinConverter(vertex_declaration))
-
-        vertex_bin_converter = vertex_bin_converters[0]
-        vertex_buffer = bin_parser.get_buffer(parser.get_vertex_buffer())
-        vertices = vertex_bin_converter.bin_to_vertices(vertex_buffer)
-        index_buffer = bin_parser.get_buffer(parser.get_index_buffer())
-        indices = [(unpack('HHH', index_buffer[i*6:i*6+6])) for i in range(len(index_buffer) // 6)]
-        skeleton_buffer = bin_parser.get_buffer(parser.get_skeleton())
-        skeleton_parser = BoneBinParser(skeleton_buffer)
-        bones = skeleton_parser.get_bones()
-
-        model_name = re.sub('(\.\(.*\))?\.xdb', '', path.name)
-
-        root_collection =  bpy.data.collections.new(model_name)
-        bpy.context.scene.collection.children.link(root_collection)
-
-        for model_element in parser.get_model_elements():
-            collection = bpy.data.collections.new(model_element.name)
-            root_collection.children.link(collection)
-            for i, lod in enumerate(model_element.lods):
-                if not self.import_lods and i > 0:
-                    break
-                lod_indices = indices[lod.index_buffer_begin//3:lod.index_buffer_end//3]
-                lod_vertices = [vertices[i + model_element.vertex_buffer_offset] for i in set(itertools.chain.from_iterable(lod_indices))]
-                lod_indices_vertex = [(lod_vertices.index(vertices[i[0] +  model_element.vertex_buffer_offset]), lod_vertices.index(vertices[i[1] +  model_element.vertex_buffer_offset]), lod_vertices.index((vertices[i[2] + model_element.vertex_buffer_offset]))) for i in lod_indices]
-                mesh = bpy.data.meshes.new(model_element.name + '_lod' + str(i))
-                mesh.from_pydata([v.position for v in lod_vertices], [], lod_indices_vertex)
-                mesh.update()
-                uv_layer = mesh.uv_layers.new()
-                for face in mesh.polygons:
-                    for vert_idx, loop_idx in zip(face.vertices, face.loop_indices):
-                        uv_layer.data[loop_idx].uv = lod_vertices[vert_idx].texcoord0
-                obj = bpy.data.objects.new(model_element.name + '_lod' + str(i), mesh)
-                collection.objects.link(obj)
-                obj.hide_set(i != 0)
-        
-        return {'FINISHED'}
-
-## Addon registration
-
-bl_info = {
-    'name': 'Allods Online geometry',
-    'category': 'Import-Export',
-    'version': (0, 0, 3),
-    'blender': (2, 90, 0)
-}
-
-def menu_func_import(self, context):
-    self.layout.operator(ImportGeometry.bl_idname, text="Allods Geometry (.bin)")
-
-def register():
-    bpy.utils.register_class(ImportGeometry)
-    bpy.types.TOPBAR_MT_file_import.append(menu_func_import)
-
-def unregister():
-    bpy.utils.unregister_class(ImportGeometry)
-    bpy.types.TOPBAR_MT_file_import.remove(menu_func_import)
